@@ -132,7 +132,7 @@ public class KafkaAdminClient {
         return topics;
     }
 
-    private <T> T doGetTopics(RetryContext retryContext) throws ExecutionException, InterruptedException {
+    private Collection<TopicListing> doGetTopics(RetryContext retryContext) throws ExecutionException, InterruptedException {
         LOG.info("Reading kafka topic {}, attempt {}",
                 kafkaConfigData.getTopicNamesToCreate().toArray(),
                 retryContext.getRetryCount());
@@ -140,7 +140,7 @@ public class KafkaAdminClient {
         if (topics != null) {
             topics.forEach(topic -> LOG.debug("Topic with name {}", topic.name()));
         }
-        return null;
+        return topics;
     }
 
     public void checkTopicResult() {
