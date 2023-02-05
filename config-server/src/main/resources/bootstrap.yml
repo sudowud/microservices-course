@@ -7,4 +7,4 @@ spring:
         git:
           uri: file:///home/locvb/Documents/microservices-demo/config-server-repository
           clone-on-start: true
-      fail-start: true
+    fail-start: true
