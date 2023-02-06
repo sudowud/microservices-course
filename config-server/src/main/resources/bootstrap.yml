@@ -7,11 +7,15 @@ spring:
         git:
           uri: https://github.com/sudowud/spring-cloud-config-server
           username: sudowud
-          password: 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
+          password: ENC(V2Gjg8qsCOKvYXjxxs0HMEjUr3v9N+qCU3KjCvZPeJKokM0mvMM5vP7cWi1ub1T629qR6WojlQaK35n+ifwz4R85ZpK2gADMiCvUyS/i0t0=)
           clone-on-start: true
           default-label: master
     fail-start: true
   security:
     user:
       name: spring_cloud_user
-      password: springCloud_Pwd!
+      password: ENC(T3UO4LRIPJh1p15G0sl1cJ5mrOcwMXDyEbSJx05LgFS+qdncYx1C1igwg813wNOoFi+drF1DuccKXECQH0hvUg==)
+
+jasypt:
+  encryptor:
+    password: Demo_Pwd!2020 # ${JASYPT_ENCRYPTOR_PASSWORD}, should pass an environment variable when deploying.
