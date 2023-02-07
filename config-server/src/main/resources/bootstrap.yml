@@ -5,6 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: file:///home/locvb/Documents/microservices-demo/config-server-repository
+          uri: https://github.com/sudowud/spring-cloud-config-server
+          username: sudowud
+          password: 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
           clone-on-start: true
+          default-label: master
     fail-start: true
