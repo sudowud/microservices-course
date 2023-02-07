@@ -11,3 +11,7 @@ spring:
           clone-on-start: true
           default-label: master
     fail-start: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
