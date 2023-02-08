@@ -6,8 +6,6 @@ spring:
       server:
         git:
           uri: file://home/locvb/Documents/microservices-demo/config-server-repository
-          username: sudowud
-          password: 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
           clone-on-start: true
           default-label: master
     fail-start: true
